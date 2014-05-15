@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Document</title>
+		<meta charset="UTF-8">
+		<style type="text/css" media="all">
+			div{width: 200px; height: 100px; border: 1px solid #000; margin: 20px;}
+		</style>
+		<script type="text/javascript" src="../jquery-1.10.2.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('button').click(function(){
+					$('p span').css('background','yellow');
+				});
+			});
+		</script>
+</head>
+<body>
+	<!-- Seletor de elemento acessa os elementos  especificado no argumento -->
+
+	<button type="button">yellow</button>
+		<div>
+			<p>Parágrafo filho do div com <span>texto</span> marcado com span</p>
+		</div>
+		<p>Parágrafo filho do body com <span>texto</span> marcado com span</p>
+</html>

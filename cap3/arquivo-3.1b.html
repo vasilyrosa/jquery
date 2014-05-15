@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>Livro jQuery do Maujor | attr(nome)</title>
+<style type="text/css" media="all">
+img{
+	display: none;
+	}
+</style>
+<script type="text/javascript" src="../jquery-1.2.6.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$(':button').click(function() {
+			$('img').css('display','block')
+	    		.attr({
+	    		src:'image.jpeg',
+	    		alt:'Foto da Imagem'
+	    	});
+		});
+		$('#reset').click(function() {
+			$('img').slideUp('slow');
+		});
+	});
+</script>
+</head>
+<body>
+
+	<img src="" alt="" />
+	<button>Botão</button>
+	<button id="reset">Reset</button>
+
+</body>
+</html>
+

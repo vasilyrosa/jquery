@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Document</title>
+		<meta charset="UTF-8">
+		<style type="text/css" media="all">
+			div{width: 200px; height: 100px; border: 1px solid #000; margin: 20px;}
+		</style>
+		<script type="text/javascript" src="../jquery-1.10.2.min.js"></script>
+		<script type="text/javascript">
+
+			$(document).ready(function(){
+				$('button').click(function(){
+					$('.diferente').css('background','blue');
+				});
+			
+			});
+		</script>
+</head>
+<body>
+	<!-- Seletor classe acessa os elementos cujo valor do atributo class
+tenha sido especificado no argumento -->
+
+	<button type="button">Azul</button>
+		<div class="diferente">DIV</div>
+		<div class="diferente">DIV</div>
+		<div>DIV</div>
+</body>
+</html>

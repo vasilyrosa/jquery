@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Document</title>
+		<meta charset="UTF-8">
+		<style type="text/css" media="all">
+			div{width: 200px; height: 100px; border: 1px solid #000; margin: 20px;}
+		</style>
+		<script type="text/javascript" src="../jquery-1.10.2.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('button').click(function(){
+					$('h2 ~ p').css('background','red'); //depois do h2 pegar todos irmãos ( p )
+				});
+			});
+		</script>
+</head>
+<body>
+	<!-- acessa o elemento próximo que se segue imediatamente ao elemento anterior-->
+
+	<button type="button">red</button>
+		<p>Parágrafo antes do cabeçalho</p>
+		<h2>Cabeçalho h2</h2>
+		<p>primeiro Parágrafo após o cabeçalho</p>
+		<p>segunda Parágrafo após o cabeçalho</p>
+		<div>DIV</div>
+		<p>terceiro Parágrafo após o cabeçalho</p>
+		
+		<div>	
+			<p>Parágrafo dentro da div</p>
+		</div>
+		
+		
+</html>

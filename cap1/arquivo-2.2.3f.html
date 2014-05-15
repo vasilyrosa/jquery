@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt">
+	<head>
+		<title>Document</title>
+		<meta charset="UTF-8">
+		<style type="text/css" media="all">
+			div{width: 200px; height: 100px; border: 1px solid #000; margin: 20px;}
+		</style>
+		<script type="text/javascript" src="../jquery-1.10.2.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#btn_vermelha').click(function(){
+					$('td:lt(4)').css('background', 'orange');
+					//$('td:gt(4)').css('background', 'orange');
+					//$('td:eq(2)').css('background', 'orange');
+				});
+			});
+		</script>
+</head>
+<body>
+	<!-- seletor:eq(indice) acessa uma ocorrência de idice no conjunto
+	de elementos selecionado por seletor  -->
+
+	<!-- seletor:gt(indice) acessa todas ocorrência apos o idice  
+	selecionado por seletor  -->
+
+	<!-- seletor:lt(indice) acessa todas ocorrência antes do idice  
+	selecionado por seletor  -->
+
+	<button type="button" id="btn_vermelha">orange</button>
+	<table border="1" cellspacing="3">
+		<tr>
+			<td>Célula indice 0</td>
+			<td>Célula indice 1</td>
+		</tr>
+
+		<tr>
+			<td>Célula indice 2</td>
+			<td>Célula indice 3</td>
+		</tr>
+
+		<tr>
+			<td>Célula indice 4</td>
+			<td>Célula indice 5</td>
+		</tr>
+
+		<tr>
+			<td>Célula indice 6</td>
+			<td>Célula indice 7</td>
+		</tr>
+		
+	</table>
+</body>
+</html>

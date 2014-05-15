@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>Livro jQuery do Maujor | attr(nome)</title>
+<style type="text/css" media="all">
+div{width: 300px; height: 175px; border: solid 1px #000}
+#remover{background: #0f0;}
+</style>
+<script type="text/javascript" src="../jquery-1.2.6.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$(':button').click(function() {
+			$('#remover').removeAttr('id');
+		});
+	});
+</script>
+</head>
+<body>
+
+	
+	<button>Botão</button>
+	<div id="remover"></div>
+
+</body>
+</html>

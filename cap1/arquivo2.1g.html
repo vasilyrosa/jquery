@@ -4,24 +4,23 @@
 		<title>Document</title>
 		<meta charset="UTF-8">
 		<style type="text/css" media="all">
-			div {
-	width:200px;
-	height:100px;
-	border:1px solid #000;
-	margin:20px;
-	}
 		</style>
 		<script type="text/javascript" src="../jquery-1.10.2.min.js"></script>
 		<script type="text/javascript">
-			$(document).ready(function() {
-				$('div').css('background','pink');
-				$('p').css('background','blue');
-			}); 
+			$(document).ready(function(){
+				$('li').eq(2).css('color', 'blue');
+			});
 		</script>	
 	</head>
 	<body>
-		<div>DIV</div>
-		<p>Parágrafo</p>
-		<div>DIV</div>
+	
+		<ul>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+			<li>Item 4</li>
+			<li>Item 5</li>
+		</ul>
+		
 	</body>
 </html>
